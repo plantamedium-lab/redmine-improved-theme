@@ -10,3 +10,6 @@ vendor
 TODO.txt
 private/sass/redmine/notes/
 private/sass/redmine/trash/
+/nbproject
+/nbproject/private/
+/index.html

@@ -3,47 +3,49 @@
  * Gray and brand colors for use across Bootstrap.
  */
 
-$gray-base:              #000;
+$gray-base: #1a1a1a;
 $gray-darker:            lighten($gray-base, 13.5%); // #222
 $gray-dark:              lighten($gray-base, 20%);   // #333
 $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-primary:         #1A1A1A; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
+
+$heading-color:         #000 !default;
 
 /**************************************************************************************************
  * Typography
  * Font, line-height, and color for body text, headings, and more.
  */
 
-$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  "Flama", "Flama Basic", Helvetica, Arial, sans-serif;
 $font-family-serif:       "Roboto Slab",Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
+$font-size-base:          12px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
-// $font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
-// $font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
-// $font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
-// $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
-// $font-size-h5:            $font-size-base;
-// $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+ $font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+ $font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+ $font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+ $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+ $font-size-h5:            $font-size-base;
+ $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 
 /**************************************************************************************************
  * Link
  */
 
 // Global textual link color.
-$link-color:            $brand-primary !default;
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-color:            $gray !default;
+$link-hover-color:      #000000 !default;
 $link-hover-decoration: underline !default;
 
 /**************************************************************************************************
@@ -51,7 +53,7 @@ $link-hover-decoration: underline !default;
  */
 
 $sidebar-width: 20%;
-$content-width: 100% - $sidebar-width - 2%; // why it overlap without gutter ?
+$content-width: 75%; // why it overlap without gutter ?
 
 /**************************************************************************************************
  * Components
@@ -126,16 +128,16 @@ $body-colour: $gray-dark;
 $sidebar-background-color: white;
 $content-background-color: white;
 
-$header-background-colour: #628DB6;
+$header-background-colour: #1A1A1A;
 $header-colour: white; // #f8f8f8
 
-$top-menu-background: darken($header-background-colour, 5%); // $gray-dark
-$top-menu-colour: white;
-$top-menu-hover-colour: $gray-dark; // #c61a1a
+$top-menu-background: #000; // $gray-dark
+$top-menu-colour: $gray-light;
+$top-menu-hover-colour: white; // #c61a1a
 
 $main-menu-colour: white;
-$main-menu-active-colour: hsl(350, 85%, 60%);
-$main-menu-hover-colour: darken($main-menu-active-colour, 5%);
+$main-menu-active-colour: #31708f;
+$main-menu-hover-colour: darken($main-menu-active-colour, 20%);
 
 // $icon-edit-colour: hsl(29, 72%, 61%); // orange hue #E49B57
 $icon-add-colour: #37B853; // green hue
@@ -148,7 +150,7 @@ $icon-add-colour: #37B853; // green hue
 $line-height-base: 1.428571429 !default; // 20/14
 $border-radius-base: 4px !default;
 
-$btn-font-weight:                600; // normal !default;
+$btn-font-weight:                normal !default;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;

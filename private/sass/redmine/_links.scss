@@ -31,9 +31,9 @@ a {
     }
     &.collapsible {
         padding-left: 12px;
-        background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
+        background-image: $btn-default-color url(../../../images/arrow_expanded.png) no-repeat -3px 40%;
         &.collapsed {
-            background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+            background: $btn-default-color  url(../../../images/arrow_collapsed.png) no-repeat -5px 40%;
         }
     }
     &#toggle-completed-versions {

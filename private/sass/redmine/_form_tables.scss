@@ -222,11 +222,11 @@ fieldset {
         border-width: 1px 0 0 0;
         > legend {
             padding-left: 16px;
-            background: url(../images/arrow_expanded.png) no-repeat 0% 40%;
+            background-image: $btn-default-color url(../../../images/arrow_expanded.png) no-repeat 0% 40%;
             cursor: pointer;
         }
         &.collapsed > legend {
-            background-image: url(../images/arrow_collapsed.png);
+            background-image: url(../../../images/arrow_collapsed.png);
         }
     }
     &#date-range p {

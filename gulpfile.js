@@ -35,9 +35,9 @@ gulp.task('sass', function() {
             // browsers are coming from browserslist file
             cascade: false
         }))
-    // .pipe(minify_css({
-    //     rebase: false
-    // }))
+     .pipe(minify_css({
+         rebase: false
+     }))
         .pipe(header('/* This file generated automatically on server side. All changes would be lost. */ \n\n'))
         .pipe(gulp.dest(project_path.css));
 });
